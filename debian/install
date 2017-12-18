@@ -1,0 +1,14 @@
+etc/playout/liquidsoap/alsa-out.conf
+etc/playout/liquidsoap/archive.conf
+etc/playout/liquidsoap/audio-out.conf
+etc/playout/liquidsoap/rms.conf
+etc/playout/liquidsoap/slots.conf
+etc/playout/liquidsoap/start.conf
+etc/playout/liquidsoap/stream-in.conf
+etc/playout/liquidsoap/stream-out-mp3.conf
+etc/playout/liquidsoap/stream-out-ogg.conf
+etc/playout/liquidsoap/system.conf
+etc/logrotate.d/playout-liquidsoap
+etc/init/playout-liquidsoap.conf
+etc/systemd/system/playout-liquidsoap.service
+

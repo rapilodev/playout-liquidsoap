@@ -1,0 +1,8 @@
+playout-liquidsoap (0.01.0016) xenial; urgency=low
+  * systemd support
+ -- Milan Chrobok <mc@radiopiloten.de>  Sun, 02 Apr 2017 12:04:09 +0200
+
+playout-liquidsoap (0.01.0014) trusty; urgency=low
+  * initial release
+ -- Milan Chrobok <mc@radiopiloten.de>  Sun, 05 Jun 2016 12:04:09 +0200
+

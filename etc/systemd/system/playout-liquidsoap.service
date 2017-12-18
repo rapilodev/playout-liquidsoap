@@ -1,0 +1,16 @@
+[Unit]
+Description=playout-liquidsoap
+
+[Service]
+User=playout
+Group=playout
+Type=simple
+ExecStart=/bin/sh -c '/usr/local/bin/liquidsoap /etc/playout/liquidsoap/start.conf >>/var/log/playout/liquidsoap.log 2>&1'
+Restart=always
+TimeoutSec=infinity
+RuntimeDirectory=playout
+PIDFile=/var/run/playout/playout-liquidsoap.pid
+
+[Install]
+WantedBy=multi-user.target
+

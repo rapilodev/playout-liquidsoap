@@ -1,0 +1,33 @@
+#! /bin/sh
+
+if [ "$1" = "remove" ]; then
+
+    if [ -e /etc/logrotate.d/playout-liquidsoap ]; then
+        rm /etc/logrotate.d/playout-liquidsoap
+    fi
+
+    if [ -e /etc/init/playout-liquidsoap.conf ]; then
+        rm /etc/init/playout-liquidsoap.conf
+    fi
+
+    if [ -e /var/run/playout/playout-liquidsoap.pid ]; then
+        rm /var/run/playout/playout-liquidsoap.pid
+    fi
+
+    if [ -e /var/log/upstart/playout-liquidsoap.log ]; then
+        rm -r /var/log/upstart/playout-liquidsoap*
+    fi
+
+    if [ -e /var/log/playout/playout-liquidsoap.log ]; then
+        rm -r /var/log/playout/playout-liquidsoap*
+    fi
+
+    if [ -e /etc/playout/liquidsoap/ ]; then
+        rm -r /etc/playout/liquidsoap/
+    fi
+
+fi
+
+#DEBHELPER#
+exit 0;
+
