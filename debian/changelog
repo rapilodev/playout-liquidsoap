@@ -1,3 +1,7 @@
+playout-liquidsoap (0.02) focal; urgency=low
+  * update debian files
+ -- Milan Chrobok <mc@radiopiloten.de>  Sun, 09 May 2021 12:04:09 +0200
+
 playout-liquidsoap (0.01.0016) xenial; urgency=low
   * systemd support
  -- Milan Chrobok <mc@radiopiloten.de>  Sun, 02 Apr 2017 12:04:09 +0200

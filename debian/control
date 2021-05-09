@@ -2,18 +2,12 @@ Source: playout-liquidsoap
 Section: sound
 Priority: optional
 Maintainer: Milan Chrobok <mc@radiopiloten.de>
-Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: perl
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.1
 Homepage: https://launchpad.net/~mc-1/+archive/playout
 
 Package: playout-liquidsoap
 Architecture: any
-Depends: ${misc:Depends}, 
- liquidsoap, liquidsoap-plugin-pulseaudio, liquidsoap-plugin-alsa, liquidsoap-plugin-icecast, liquidsoap-plugin-ogg, liquidsoap-plugin-opus, liquidsoap-plugin-lame, liquidsoap-plugin-samplerate, liquidsoap-plugin-taglib, liquidsoap-plugin-xmlplaylist, liquidsoap-plugin-soundtouch, liquidsoap-plugin-mad, liquidsoap-plugin-ladspa, liquidsoap-plugin-flac, liquidsoap-plugin-faad, liquidsoap-plugin-lo, 
- quelcom, 
- festival,
- upstart
-Description: liquidsoap service for playout
- a upstart service to run liquidsoap with configuration from /etc/playout/liquidsoap/start.conf
-
+Depends: ${misc:Depends}, quelcom
+Description: liquidsoap service plugin for playout
+ configured at /etc/playout/liquidsoap/start.conf
